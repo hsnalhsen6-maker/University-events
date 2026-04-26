@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كل الفعاليات - دليل فعاليات SVU</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar" >
+            <div class="container-fluid text-center">                
+                <a class="navbar-brand" href="index.html"> <img src="assets/img/logo.png" alt="دليل فعاليات SVU" class="d-inline-block align-text-center" style="max-width: 70%; height: auto;"> </a> 
+                <div class="mx-auto my-auto align-text-center">
+                <h1 class="fw-bold fs-2">دليل فعاليات الجامعة الافتراضية السورية</h1>                
+                <div class="small-title">
+                <h5>نافذتك الرقمية للبقاء على اطلاع بكل ما هو جديد في أروقة جامعتنا</h5>
+                </div>
+                </div>
+            </div>
+        </nav>        
+        <div class="container">            
+        </div>
+        <nav class="navbar navbar-expand-md navbar-dark custom-navbar">
+            <div class="container-fluid">                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto" id="NavList">
+                        <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+                        <li class="nav-item"><a class="nav-link" href="events.html">كل الفعاليات</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">عن الدليل</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بنا</a></li>                        
+                    </ul>
+                    <button id="darkToggle" class="btn btn-outline-light" style="float:left;">🌙</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <h1 class="text-center mb-4">قائمة الفعاليات</h1>
+
+        <div class="card shadow-sm mb-5 p-3">
+            <div class="row g-3 align-items-center">
+                <div class="col-lg-4">
+                    <div class="input-group">
+                        <span class="input-group-text border-end-0"><img src="assets/img/logo.png" style="width: 20px; filter: grayscale(1);"></span>
+                        <input type="text" id="searchInput" class="form-control border-start-0" placeholder="ابحث عن فعالية باسمها...">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="d-flex flex-wrap gap-2 justify-content-lg-end justify-content-center align-items-center">
+                        <span class="fw-bold d-none d-sm-inline">فلترة:</span>
+                        <button class="btn btn-outline-primary filter-btn active" data-filter="all">الكل</button>
+                        <button class="btn btn-outline-primary filter-btn" data-filter="tech">تكنولوجيا</button>
+                        <button class="btn btn-outline-primary filter-btn" data-filter="sports">رياضة</button>
+                        <button class="btn btn-outline-primary filter-btn" data-filter="culture">ثقافة</button>
+                        <button class="btn btn-outline-primary filter-btn" data-filter="music">موسيقى</button>
+                        <input type="date" id="dateFilter" class="form-control w-auto d-inline-block" title="البحث حسب التاريخ">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4" id="eventsContainer">
+            <!-- No Results Message -->
+            <div id="noResults" class="col-12 text-center py-5 d-none">
+                <h3 class="text-muted">لم يتم العثور على فعاليات تطابق بحثك...</h3>
+                <button class="btn btn-link" onclick="location.reload()">إعادة ضبط الفلاتر</button>
+            </div>
+
+            <div class="col-md-4 event-item" data-category="tech" data-date="2026-06-15">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/img/web.jpg" class="card-img-top" alt="Workshop">
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-primary mb-2 align-self-start">تكنولوجيا</span>
+                        <h5 class="card-title">ورشة عمل البرمجة</h5>
+                        <p class="text-muted small mb-1">📅 15 حزيران 2026 | 📍 كلية الهمك - مبنى المعلوماتية</p>
+                        <p class="card-text">تعلم أساسيات تطوير الويب باستخدام أحدث التقنيات.</p>
+                        <a href="event.html?id=3" class="btn btn-primary mt-auto">التفاصيل</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 event-item" data-category="sports" data-date="2026-06-20">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/img/marathon.jpg" class="card-img-top" alt="Marathon">
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-success mb-2 align-self-start">رياضة</span>
+                        <h5 class="card-title">البطولة الرياضية السنوية</h5>
+                        <p class="text-muted small mb-1">📅 20 حزيران 2026 | 📍 ملعب تشرين</p>
+                        <p class="card-text">شارك في الألعاب الرياضية الجامعية واختبر لياقتك.</p>
+                        <a href="event.html?id=2" class="btn btn-primary mt-auto">التفاصيل</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 event-item" data-category="music" data-date="2026-06-22">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/img/concert.jpeg" class="card-img-top" alt="concert">
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-danger mb-2 align-self-start">موسيقى</span>
+                        <h5 class="card-title">الحفل الموسيقي</h5>
+                        <p class="text-muted small mb-1">📅 22 حزيران 2026 | 📍 دار الأوبرا</p>
+                        <p class="card-text">هل ترغب في حضور الحفل الموسيقي الجامعي</p>
+                        <a href="event.html?id=4" class="btn btn-primary mt-auto">التفاصيل</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 event-item" data-category="culture" data-date="2026-06-22">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/img/msrhy.jpg" class="card-img-top" alt="Marathon">
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-warning text-dark mb-2 align-self-start">ثقافة</span>
+                        <h5 class="card-title">العرض المسرحي</h5>
+                        <p class="text-muted small mb-1">📅 22 حزيران 2026 | 📍 دار الأوبرا</p>
+                        <p class="card-text"> تقدم فرقة جامعة دمشق الثقافية عرضاَ مسرحياَ مميزاَ</p>
+                        <a href="event.html?id=5" class="btn btn-primary mt-auto">التفاصيل</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 event-item" data-category="sports" data-date="2026-06-25">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/img/marathon.jpg" class="card-img-top" alt="Marathon">
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-success mb-2 align-self-start">رياضة</span>
+                        <h5 class="card-title">ماراثون الجامعة</h5>
+                        <p class="text-muted small mb-1">📅 25 حزيران 2026 | 📍 طريق المطار</p>
+                        <p class="card-text">سباق الجري السنوي لتعزيز نمط الحياة الصحي.</p>
+                        <a href="event.html?id=6" class="btn btn-primary mt-auto">التفاصيل</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 event-item" data-category="culture" data-date="2026-06-28">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/img/dialogue_session.jpg" class="card-img-top" alt="Dialogue">
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-warning text-dark mb-2 align-self-start">ثقافة</span>
+                        <h5 class="card-title">جلسة حوارية: مستقبل العمل</h5>
+                        <p class="text-muted small mb-1">📅 28 حزيران 2026 | 📍 القاعة المركزية</p>
+                        <p class="card-text">نقاش حول المهارات المطلوبة في سوق العمل المستقبلي.</p>
+                        <a href="event.html?id=7" class="btn btn-primary mt-auto">التفاصيل</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 event-item" data-category="tech" data-date="2026-10-14">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/img/program_day.jpg" class="card-img-top" alt="Program Day">
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-primary mb-2 align-self-start">تكنولوجيا</span>
+                        <h5 class="card-title">يوم البرمجة التفاعلي</h5>
+                        <p class="text-muted small mb-1">📅 14 اكتوبر 2026 | 📍 كلية الهمك</p>
+                        <p class="card-text">تحديات برمجية وعمل جماعي لحل مشكلات تقنية.</p>
+                        <a href="event.html?id=8" class="btn btn-primary mt-auto">التفاصيل</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 event-item" data-category="tech" data-date="2026-06-15">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/img/programming.jpg" class="card-img-top" alt="Programming">
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-primary mb-2 align-self-start">تكنولوجيا</span>
+                        <h5 class="card-title">ورشة عمل البرمجة 1</h5>
+                        <p class="text-muted small mb-1">📅 15 حزيران 2026 | 📍 مبنى المعلوماتية</p>
+                        <p class="card-text">ورشة عمل تعليمية للمبتدئين في عالم البرمجة.</p>
+                        <a href="event.html?id=9" class="btn btn-primary mt-auto">التفاصيل</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white mt-auto">
+        <div class="footer-newsletter">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-6">
+                        <h4>اشترك في نشرتنا الإخبارية</h4>
+                        <p>كن أول من يعلم بالفعاليات والأنشطة الجامعية القادمة</p>
+                        <form action="" method="post">
+                            <input type="email" name="email" placeholder="أدخل بريدك الإلكتروني" required>
+                            <input type="submit" value="اشتراك">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-4 text-center">
+            <p class="mb-3">جميع الحقوق محفوظة &copy; 2026 دليل فعاليات الجامعة الافتراضية</p>
+            <div class="social-links">
+                <a href="#" class="text-white mx-2"><img src="assets/img/fb.png" alt="Facebook"></a>
+                <a href="#" class="text-white mx-2"><img src="assets/img/Instagram.png" alt="Instagram"></a>
+                <a href="#" class="text-white mx-2"><img src="assets/img/X.png" alt="X"></a>
+            </div>
+        </div>
+    </footer>
+    <button id="scrollTop" class="btn btn-primary">↑</button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

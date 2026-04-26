@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل فعاليات الجامعة الافتراضية - الرئيسية</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar" >
+            <div class="container-fluid text-center">                
+                <a class="navbar-brand" href="index.html"> <img src="assets/img/logo.png" alt="دليل فعاليات SVU" class="d-inline-block align-text-center" style="max-width: 70%; height: auto;"> </a> 
+                <div class="mx-auto my-auto align-text-center">
+                <h1 class="fw-bold fs-2">دليل فعاليات الجامعة الافتراضية السورية</h1>                
+                <div class="small-title">
+                <h5>نافذتك الرقمية للبقاء على اطلاع بكل ما هو جديد في أروقة جامعتنا</h5>
+                </div>
+                </div>
+            </div>
+        </nav>        
+        <div class="container">            
+        </div>
+        <nav class="navbar navbar-expand-md navbar-dark custom-navbar">
+            <div class="container-fluid">                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto" id="NavList">
+                        <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+                        <li class="nav-item"><a class="nav-link" href="events.html">كل الفعاليات</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">عن الدليل</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">اتصل بنا</a></li>                        
+                    </ul>
+                    <button id="darkToggle" class="btn btn-outline-light" style="float:left;">🌙</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="student-box">
+                            <h3>أسماء وأرقام الطلاب المشاركين</h3>
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>الرقم الجامعي</th>
+                                        <th>اسم الطالب</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>112256</td>
+                                        <td>سنان سلامه</td>
+                                    </tr>
+                                    <tr>
+                                        <td>322047</td>
+                                        <td>لونا محمد العيسى</td>
+                                    </tr>
+                                    <tr>
+                                        <td>162939</td>
+                                        <td>نبال المدني</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+        </section>
+
+        <section class="mb-5">
+            <h2 class="mb-4 text-center">فعاليات بارزة هذا الأسبوع</h2>
+            <div id="eventCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#eventCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#eventCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#eventCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner rounded shadow">
+                    <div class="carousel-item active">
+                        <img src="assets/img/Ai.jpeg" class="d-block w-100" alt="Event 1">
+                        <div class="carousel-caption bg-dark bg-opacity-50 rounded">
+                            <h5>مؤتمر الذكاء الاصطناعي</h5>
+                            <p>تعرف على أحدث تقنيات العصر ومستقبل الذكاء الاصطناعي.</p>
+                            <a href="event.html?id=1" class="btn btn-primary btn-sm mt-2">التفاصيل</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/sportcomp.jpg" class="d-block w-100" alt="Event 2">
+                        <div class="carousel-caption bg-dark bg-opacity-50 rounded">
+                            <h5>البطولة الرياضية السنوية</h5>
+                            <p>شارك في بطولات الجامعة المتنوعة وأظهر مهاراتك الرياضية.</p>
+                            <a href="event.html?id=2" class="btn btn-primary btn-sm mt-2">التفاصيل</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/web.jpg" class="d-block w-100" alt="Event 3">
+                        <div class="carousel-caption bg-dark bg-opacity-50 rounded">
+                            <h5>ورشة تطوير الويب</h5>
+                            <p>تعلم بناء تطبيقات ويب حديثة باستخدام أحدث الأدوات.</p>
+                            <a href="event.html?id=3" class="btn btn-primary btn-sm mt-2">التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#eventCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">السابق</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#eventCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">التالي</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="mb-5 text-center">
+            <h3 class="mb-3">تصنيفات سريعة</h3>
+            <a href="#" class="badge bg-primary fs-5 text-decoration-none mx-1">تكنولوجيا</a>
+            <a href="#" class="badge bg-success fs-5 text-decoration-none mx-1">رياضة</a>
+            <a href="#" class="badge bg-warning text-dark fs-5 text-decoration-none mx-1">ثقافة</a>
+            <a href="#" class="badge bg-danger fs-5 text-decoration-none mx-1">موسيقى</a>
+        </section>
+
+        <section class="mb-5">
+            <h3 class="mb-3 text-center">أحدث الفعاليات</h3>
+            <div class="row g-4">
+                <div class="col-md-4 col-sm-6">
+                    <div class="card h-100 shadow-sm event-card-custom">
+                        <img src="assets/img/marathon.jpg" class="card-img-top" alt="Marathon">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-success mb-2 align-self-start">رياضة</span>
+                            <h5 class="card-title">ماراثون الجامعة</h5>
+                            <p class="text-muted small mb-1">📅 25 حزيران 2026</p>
+                            <p class="card-text">سباق الجري السنوي لتعزيز نمط الحياة الصحي...</p>
+                            <a href="event.html?id=6" class="btn btn-outline-primary mt-auto">التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card h-100 shadow-sm event-card">
+                        <img src="assets/img/dialogue_session.jpg" class="card-img-top" alt="Event">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-warning text-dark mb-2 align-self-start">ثقافة</span>
+                            <h5 class="card-title">مستقبل العمل</h5>
+                            <p class="text-muted small mb-2">28 حزيران 2026</p>
+                            <p class="card-text">جلسة نقاشية حول المهارات المطلوبة في سوق العمل...</p>
+                            <a href="event.html?id=7" class="btn btn-outline-primary mt-auto">التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card h-100 shadow-sm event-card">
+                        <img src="assets/img/program_day.jpg" class="card-img-top" alt="Event">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-primary mb-2 align-self-start">تكنولوجيا</span>
+                            <h5 class="card-title">يوم البرمجة التفاعلي</h5>
+                            <p class="text-muted small mb-2">14 اكتوبر 2026</p>
+                            <p class="card-text">ورشة عمل تطبيقية لكتابة الأكواد وحل المشكلات...</p>
+                            <a href="event.html?id=8" class="btn btn-outline-primary mt-auto">التفاصيل</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white mt-auto">
+        <div class="footer-newsletter">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-6">
+                        <h4>اشترك في نشرتنا الإخبارية</h4>
+                        <p>كن أول من يعلم بالفعاليات والأنشطة الجامعية القادمة</p>
+                        <form action="" method="post">
+                            <input type="email" name="email" placeholder="أدخل بريدك الإلكتروني" required>
+                            <input type="submit" value="اشتراك">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-4 text-center">
+            <p class="mb-3">جميع الحقوق محفوظة &copy; 2026 دليل فعاليات الجامعة الافتراضية</p>
+            <div class="social-links">
+                <a href="#" class="text-white mx-2"><img src="assets/img/fb.png" alt="Facebook"></a>
+                <a href="#" class="text-white mx-2"><img src="assets/img/Instagram.png" alt="Instagram"></a>
+                <a href="#" class="text-white mx-2"><img src="assets/img/X.png" alt="X"></a>
+            </div>
+        </div>
+    </footer>
+    <button id="scrollTop" class="btn btn-primary">↑</button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
